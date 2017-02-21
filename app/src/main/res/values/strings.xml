@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LUMENS</string>
+    <string name="action_settings">Settings</string>
+    <string name="fileName">1.bmp</string>
+    <string name="fileName2">2.bmp</string>
+    <string name="fileName3">3.bmp</string>
+    <string name="fileName4">4.bmp</string>
+    <string name="fileName5">5.bmp</string>
+    <string name="ISO">ISO</string>
+    <string name="Aperture">Aperture</string>
+    <string name="Shutter">Shutter Speed</string>
+    <string name="Exposure">Exposure Compensation</string>
+
+</resources>

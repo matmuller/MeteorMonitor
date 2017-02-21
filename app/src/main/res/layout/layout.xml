@@ -1,0 +1,203 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"  tools:context=".mainactivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Capture Period (ms)"
+            android:id="@+id/textView8"
+            android:textSize="14sp"
+            android:layout_toLeftOf="@+id/spinner2"
+            android:layout_alignBottom="@+id/spinner2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="AVG Treshold (#SE)"
+            android:id="@+id/textView9"
+            android:textSize="15sp"
+            android:layout_toLeftOf="@+id/spinner"
+            android:layout_toStartOf="@+id/spinner"
+            android:layout_alignBottom="@+id/spinner" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="STD Treshold (#STD)"
+            android:id="@+id/textView10"
+            android:textSize="14sp"
+            android:layout_alignEnd="@+id/textView8"
+            android:layout_alignBottom="@+id/spinner3"
+            android:layout_toLeftOf="@+id/spinner3" />
+
+        <Spinner
+            android:layout_width="75dp"
+            android:layout_height="25dp"
+            android:id="@+id/spinner"
+            android:spinnerMode="dropdown"
+            android:layout_alignRight="@+id/toggleButton"
+            android:layout_above="@+id/spinner3" />
+
+        <Spinner
+            android:layout_width="75dp"
+            android:layout_height="25dp"
+            android:id="@+id/spinner2"
+            android:spinnerMode="dropdown"
+            android:layout_above="@+id/toggleButton"
+            android:layout_alignRight="@+id/toggleButton" />
+
+        <Spinner
+            android:layout_width="75dp"
+            android:layout_height="25dp"
+            android:id="@+id/spinner3"
+            android:spinnerMode="dropdown"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_above="@+id/spinner2"
+            android:layout_alignRight="@+id/spinner2" />
+
+        <SurfaceView
+            android:id="@+id/surfaceView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_above="@+id/textView4" />
+
+        <SurfaceView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/surfaceView2"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignBottom="@+id/surfaceView"
+            android:layout_alignRight="@+id/surfaceView"
+            android:layout_alignEnd="@+id/surfaceView" />
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New ToggleButton"
+            android:id="@+id/toggleButton"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textOff="START"
+            android:textOn="STOP" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Sensor not found"
+            android:id="@+id/textView"
+            android:textSize="14sp"
+            android:layout_above="@+id/textView3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Sensor not found"
+            android:id="@+id/textView3"
+            android:textSize="14sp"
+            android:layout_above="@+id/textView2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Location \n not found"
+            android:id="@+id/textView4"
+            android:textSize="15sp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/checkBox2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Sensor not found"
+            android:id="@+id/textView2"
+            android:textSize="14sp"
+            android:layout_above="@+id/textView5"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Sensor not found"
+            android:id="@+id/textView5"
+            android:textSize="14sp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="diffAVG"
+            android:id="@+id/textView6"
+            android:textSize="14sp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_above="@+id/textView" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="errAVG"
+            android:id="@+id/textView7"
+            android:textSize="14sp"
+            android:layout_above="@+id/textView6"
+            android:layout_alignLeft="@+id/textView6"
+            android:layout_alignStart="@+id/textView6" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="STD Analisys"
+            android:id="@+id/checkBox"
+            android:layout_above="@+id/spinner"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:checked="false"
+            android:textSize="12sp" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Using Lens"
+            android:id="@+id/checkBox2"
+            android:checked="false"
+            android:layout_above="@+id/spinner"
+            android:layout_toLeftOf="@+id/checkBox"
+            android:layout_toStartOf="@+id/checkBox"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
